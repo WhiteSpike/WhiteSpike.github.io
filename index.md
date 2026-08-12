@@ -1,4 +1,6 @@
 ---
+layout: default
+page_type: landing
 ---
 
 Welcome to WhiteSpike's Portfolio

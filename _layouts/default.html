@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        <nav>
+            <Home href="/">Home</Home>
+            <Blog href="/blog">Blog</Blog>
+            <Projects href="/projects">Projects</Projects>
+        </nav>
+        <h1>{{ page.title }}</h1>
+        <section>
+            {{ content }}
+        </section>
+        {% include footer.html %}
+    </body>
+</html>

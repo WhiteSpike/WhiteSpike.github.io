@@ -1,0 +1,21 @@
+<div class="container-fluid justify-content-center">
+    {%- assign unfocused_c = "6c757d" -%}
+
+    {% for account in site.author %}
+    {%- assign service_name = account[0] -%}
+    {%- assign account_handle = account[1] -%}
+    {%- assign service_data = site.data.social-media[service_name] -%}
+        {%- if service_data -%}
+            {%- assign service = service_data.url -%}
+            {%- assign focused_c = service_data.color -%}
+            {%- assign service_icon = service_data.icon -%}
+            {% include social_entry.html 
+                service_url=service
+                account=account_handle
+                font_size="15px"
+                unfocused_color=unfocused_c
+                focused_color=focused_c
+                icon=service_icon %}
+        {%- endif -%}
+    {% endfor %}
+</div>

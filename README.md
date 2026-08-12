@@ -9,3 +9,19 @@
 - [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (check versions using ``gcc -v``,``g++ -v``, and ``make -v``)
     - For Windows users, [WinLibs](https://winlibs.com/) contains these two tools.
         - Instead of ``make -v``, you will use ``mingw32-make -v``. You can decide to put it under an alias later.
+
+## Gems:
+
+- You have to install the gems listed in the ``Gemfile`` file through ``gem install <name>``
+
+# Running locally
+- Open command prompt in the root folder of the repository and run ``jekyll serve``.
+    - This can error if you do not have the required Ruby gems listed in ``Gemfile`` file installed locally.
+
+- Once confirmed the server is running, you can access it through the address listed in ``Server address: ``
+    - You will use this to check changes made in the files before commiting to the repository.
+
+# Running through Github Pages
+
+- Once changes are made and committed to the ``release`` branch, a Github Action is triggered which attempts to build and deploy the page through Jekyll workflow.
+    - If it fails, review and correction of the latest failed commit is required to ensure correctness.
