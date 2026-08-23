@@ -17,3 +17,6 @@ collections:
 
 exclude:
   - README.md
+
+sass:
+  quiet_deps: true
