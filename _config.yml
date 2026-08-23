@@ -1,11 +1,19 @@
-title: WhiteSpike's Portfolio
-description: Main page where I post the projects I have done or doing
+title: WhiteSpike
+description: >-
+              <b> Programmer for Fun </b> <br>
 
 author:
   name: WhiteSpike
   image: imgs/WhiteSpike.png
   email: b.m.v.cabrita@gmail.com
   github: WhiteSpike
+
+nav_exclude:
+  - pages/index.md
+
+collections:
+  projects:
+    output: true
 
 exclude:
   - README.md

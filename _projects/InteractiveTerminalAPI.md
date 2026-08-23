@@ -1,12 +1,11 @@
 ---
 name: "Interactive Terminal API"
-feats: [C#, netstandard2.1, API]
+tools: [C#, netstandard2.1, API]
 description: A Lethal Company mod which changes how its terminal functions, going from text-based input to an interactive application.
 page_type: project
 ---
 
 ### Interactive Terminal API
-
 In the "Lethal Company" videogame in its popular phase, most people complained how inconvenient it is to purchase items during runs as they are constantly writing the name of the items and their amounts, leading to mistakes due to typos and end runs due to that. One of such examples was another mod called ["Lategame Upgrades"](https://thunderstore.io/c/lethal-company/p/malco/Lategame_Upgrades/) which originally allowed you to buy upgrades by typing out the whole name of the upgrade which was satire at the time.
 
 As such, this mod was developed to resolve those problems by introducing interactive applications. Instead of the players going back and forth between the list of items and the confirmation of goods, they would use an application which allows them to select what items they wanna purchase and how many, making bulk purchases much easier to do.

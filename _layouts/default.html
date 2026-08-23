@@ -1,16 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
+
     {% include head.html %}
-    <body>
-        <nav>
-            <Home href="/">Home</Home>
-            <Blog href="/blog">Blog</Blog>
-            <Projects href="/projects">Projects</Projects>
-        </nav>
-        <h1>{{ page.title }}</h1>
-        <section>
-            {{ content }}
-        </section>
-        {% include footer.html %}
+
+    <body class="h-100 w-100 d-flex flex-column">
+        <main class="flex-shrink-0 container mt-5">
+        {% include navbar.html %}
+        
+            <section>
+                {{ content }}
+            </section>
+
+        </main>
+        {% include Footer/footer.html %}
     </body>
+<style>
+  .overlay{
+    border-radius: 10px;
+    backdrop-filter: blur(100px);
+    padding-top: 2px;
+    padding-bottom: 65px;
+  }
+</style>
+
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    {% include head.html %}
+    {% include navbar.html %}
+
+    <body class="landing">
+        <div class="idcontainer">
+          <div class="div-text-l">
+            <h1 class="heading-4">
+              <span id="rotating-emoji" class="emoji"><strong class="bold-text">👋</strong></span>
+            </h1>
+            <h1 class="heading-3">
+                <strong class="h1-frontpage">Hello, I'm WhiteSpike</strong>
+            </h1>
+            <p class="body-hero">I am a programmer who enjoys messing/reading code as it looks delightful doing so. I like playing video-games during free-time.
+            </p>
+          </div>
+            <!-- Scroll Down Button -->
+            <button class="scroll-down-btn" aria-label="Scroll Down">
+              <span>Scroll Down</span>
+              <i class="arrow down"></i> <!-- Assuming you have an arrow icon -->
+            </button>
+        </div>
+    {% include Footer/footer.html %}
+    </body>
+    
+    {% include scripts.html %}
+<style>
+  iframe{
+    width: 100%; /* Set a different width for screens <= 600px */
+    height: 300px; /* Set a different height for screens <= 600px */
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+  }
+</style>
+</html>
